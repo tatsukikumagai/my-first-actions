@@ -20,11 +20,11 @@ jobs:
 
       - name: Run tests and save output
         run: |
-          pytest > pytest.out || true  # 失敗しても続行
+          pytest > pytest.out || true
 
       - name: Generate report
         run: |
-          python ./github/generate_report.py
+          python githubfile/generate_report.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
