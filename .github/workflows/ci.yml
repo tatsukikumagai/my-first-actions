@@ -24,7 +24,7 @@ jobs:
 
       - name: Generate report
         run: |
-          python github/generate_report.py
+          python ./github/generate_report.py
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
